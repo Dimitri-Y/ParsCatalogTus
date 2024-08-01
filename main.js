@@ -27,7 +27,7 @@ class CatalogDownloader {
       ).map((item) => ({
         title: item.querySelector("h3").innerText,
         link: item.querySelector("a.link-icon.pdf").href,
-        dateRange: item.querySelector("time").innerText,
+        dateRange: item.querySelector("p").innerText,
       }));
     });
   }
